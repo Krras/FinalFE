@@ -4,13 +4,13 @@
   box-sizing: border-box;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-/* ---------------BODY---------------- */
+/* -------------------------------------------------------BODY---------------------------------------------- */
 body {
   background-image: url(img/bg-tablet-pattern.svg);
   background-repeat: no-repeat;
   background-position: right -145px top -200px;
 }
-/* ---------------HEADER-------------- */
+/* --------------------------------------------------------HEADER--------------------------------------------- */
 header {
   display: flex;
   flex-direction: row;
@@ -52,10 +52,13 @@ button a {
   text-decoration: none;
   color: #ffffff;
 }
+button:active{
+  opacity: 75%;
+}
 .menuDesplegable {
   display: none;
 }
-/* ----------------MAIN--------------- */
+/* ----------------------------------------------------MAIN------------------------------------------------ */
 main {
   display: flex;
   flex-direction: column;
@@ -65,7 +68,7 @@ main {
   background-repeat: no-repeat;
   background-position: left -400px bottom 130px;
 }
-/* --------------BLOQUE 1--------------- */
+/* -----------------------------------------------------BLOQUE 1---------------------------------------------- */
 .bloque1 {
   display: flex;
   flex-direction: column;
@@ -170,7 +173,7 @@ main {
   width: 90%;
   margin-left: 15%;
 }
-/* ------------------BLOQUE 2------------- */
+/* ----------------------------------------------------------BLOQUE 2--------------------------------------------- */
 .bloque2 {
   display: flex;
   flex-direction: column;
@@ -222,7 +225,7 @@ main {
   line-height: 155%;
   color: #b9b9c1;
 }
-/* ---------------FOOTER------------ */
+/* -------------------------------------------------------------FOOTER---------------------------------------------------- */
 .footer1 {
   display: flex;
   justify-content: space-between;
@@ -327,14 +330,14 @@ footer h6 {
   padding-left: 55px;
 }
 
-/* ---------------------RESPONSIVE 375PX------------------------ */
+/* -------------------------------------------------------RESPONSIVE 375PX------------------------------------------------ */
 @media screen and (min-width:320px) and (max-width:460px){
   body {
     width: 100%;
     background-size: 30rem;
     background-position: top -80px left 2rem;
   }
-  /* --------------HEADER--------------- */
+  /* ----------------------------------------------------HEADER--------------------------------------------- */
   header {
     justify-content: space-between;
     padding: 15% 5% 15% 5%;
@@ -353,14 +356,14 @@ footer h6 {
   .menuDesplegable {
     display: block;
   }
-  /* ----------------MAIN-------------- */
+  /* ----------------------------------------------------MAIN------------------------------------------- */
   main {
     width: 100%;
     padding: 0 0 0 0;
     background-size: contain;
     background-position: top 27rem left 15rem;
   }
-  /* ---------------BLOQUE 1------------ */
+  /* --------------------------------------------------BLOQUE 1------------------------------------------- */
   .bloque1 {
     height: fit-content;
     width: 100%;
@@ -441,7 +444,7 @@ footer h6 {
     padding: 4% 0 15% 0;
     text-align: left;
   }
-  /* ---------------BLOQUE 2------------------ */
+  /* -------------------------------------------------BLOQUE 2-------------------------------------------- */
   .bloque2 h4 {
     font-size: 35px;
     margin-bottom: 15%;
@@ -461,7 +464,7 @@ footer h6 {
     margin-top: 2rem;
   }
 
-  /* ------------------FOOTER----------------- */
+  /* --------------------------------------------------------FOOTER------------------------------------------- */
   .footer1 {
     flex-direction: column;
     padding: 20% 5% 20% 5%;
