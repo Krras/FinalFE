@@ -31,22 +31,26 @@ header ul li {
   line-height: 19px;
 }
 .navegacion:hover {
-  color: #f3603b;
+  color: rgb(143, 148, 167);
 }
 .navegacion {
   text-decoration: none;
+  color: #242e52;
 }
 button {
   align-items: center;
   border-radius: 2rem;
   border: none;
   background-color: #f3603b;
-  color: #ffffff;
   height: 3rem;
   width: 8rem;
   justify-content: center;
   box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
   cursor: pointer;
+}
+button a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .menuDesplegable {
   display: none;
@@ -226,7 +230,8 @@ main {
   padding: 5% 13% 5% 13%;
   background-color: #f3603b;
   background-image: url(img/bg-simplify-section-desktop.svg);
-  background-position: right -230px bottom 360px;
+  background-repeat: no-repeat;
+  background-position:right -240px bottom 0px;
 }
 .footer1 h3 {
   font-style: normal;
@@ -238,8 +243,10 @@ main {
 }
 .footer1 button {
   background-color: #ffffff;
-  color: #f3603b;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+.footer1 button a {
+  color: #f3603b;
 }
 .footer2 {
   background-color: #1e1e26;
@@ -247,7 +254,7 @@ main {
   justify-content: space-around;
   padding: 5% 10% 5% 10%;
 }
-.copyMobile{
+.copyMobile {
   display: none;
 }
 .imagenes {
@@ -261,8 +268,10 @@ main {
   width: 500px;
 }
 .iconos {
-  color: #ffffff;
   font-size: 20px;
+}
+.iconos a {
+  color: #ffffff;
 }
 .iconos i {
   padding: 5px;
@@ -308,6 +317,7 @@ main {
   width: 70px;
   border-radius: 30px;
   box-shadow: none;
+  color: #ffffff;
 }
 footer h6 {
   color: #8c8c94;
@@ -318,18 +328,18 @@ footer h6 {
 }
 
 /* ---------------------RESPONSIVE 375PX------------------------ */
-@media (max-width: 375px) {
+@media screen and (min-width:320px) and (max-width:425px){
   body {
     width: 100%;
-    background-size:30rem;
-    background-position:top -80px left 2rem;
+    background-size: 30rem;
+    background-position: top -80px left 2rem;
   }
   /* --------------HEADER--------------- */
-  header{
+  header {
     justify-content: space-between;
     padding: 15% 5% 15% 5%;
   }
-  .logoHeader{
+  .logoHeader {
     width: 120px;
     position: relative;
     top: 0.3rem;
@@ -348,7 +358,7 @@ footer h6 {
     width: 100%;
     padding: 0 0 0 0;
     background-size: contain;
-    background-position:top 27rem left 15rem;
+    background-position: top 27rem left 15rem;
   }
   /* ---------------BLOQUE 1------------ */
   .bloque1 {
@@ -363,7 +373,7 @@ footer h6 {
   .fila2 {
     flex-direction: column;
     align-items: center;
-    width: 375px;
+    width: 100%;
   }
   .item1 {
     display: flex;
@@ -380,7 +390,7 @@ footer h6 {
     width: 90%;
     line-height: 2rem;
   }
-  .item1 button{
+  .item1 button {
     margin: 2% 0 30% 0;
   }
   .item3 {
@@ -399,108 +409,109 @@ footer h6 {
     text-align: center;
     line-height: 3rem;
   }
-  .item2 p{
+  .item2 p {
     text-align: center;
     line-height: 2rem;
     width: 88%;
     margin-bottom: 15%;
   }
-  .item4{
+  .item4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .caracteristicas{
+  .caracteristicas {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-
   }
-  .item4titulo{
+  .item4titulo {
     align-items: center;
     width: 100%;
     background-color: rgb(255, 239, 234);
     border-radius: 2rem 0 0 2rem;
     margin-left: 1.5rem;
   }
-  .item4texto{
+  .item4texto {
     margin: 0;
     width: 93%;
     line-height: 2rem;
     padding: 4% 0 15% 0;
+    text-align: left;
   }
   /* ---------------BLOQUE 2------------------ */
-  .bloque2 h4{
+  .bloque2 h4 {
     font-size: 35px;
     margin-bottom: 15%;
   }
-.opiniones{
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
-  height: 54rem;
-}
-.caja{
-  width: 100%;
-  height: 28%;
-}
-.bloque2 button {
-margin-bottom: 3rem;
-margin-top: 2rem;
-}
+  .opiniones {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 54rem;
+  }
+  .caja {
+    width: 100%;
+    height: 28%;
+  }
+  .bloque2 button {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
 
-/* ------------------FOOTER----------------- */
-.footer1 {
-  flex-direction: column;
-  padding: 20% 5% 20% 5%;
-  background-size: 100rem;
-  background-position: right 15%
-}
-.footer1 h3 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.footer2{
-  flex-direction: column-reverse;
-  height: 30rem;
-  justify-content: space-between ;
-}
-.imagenes{
-  flex-direction: column-reverse;
-  align-items: center;
-  height: 7rem;
-}
-.logoFooter a{
-  margin: 3rem 0 1rem 0;
-}
-.columnaFooter{
-  width: 100%;
-  height: 10rem;
-}
-.columnaFooter ul{
-  padding-left: 6%;
-}
-.columnaFooter ul li{
-  padding: 0.7rem 0 0.7rem 0;
-}
-.iconos{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
-.formYcopy h6 {
-  display: none;
-}
-.formulario{
-  width: 100%;
-
-}
-.copyMobile{
-  display: block;
-  padding: 0;
-  text-align: center;
-}
+  /* ------------------FOOTER----------------- */
+  .footer1 {
+    flex-direction: column;
+    padding: 20% 5% 20% 5%;
+    background-image: url(img/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+  .footer1 h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer2 {
+    flex-direction: column-reverse;
+    height: 30rem;
+    justify-content: space-between;
+  }
+  .imagenes {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 7rem;
+  }
+  .logoFooter a {
+    margin: 3rem 0 1rem 0;
+  }
+  .columnaFooter {
+    width: 100%;
+    height: 10rem;
+  }
+  .columnaFooter ul {
+    padding-left: 6%;
+  }
+  .columnaFooter ul li {
+    padding: 0.7rem 0 0.7rem 0;
+  }
+  .iconos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  .formYcopy h6 {
+    display: none;
+  }
+  .formulario {
+    width: 100%;
+  }
+  .copyMobile {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
 }
