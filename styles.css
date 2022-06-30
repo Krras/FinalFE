@@ -328,7 +328,7 @@ footer h6 {
 }
 
 /* ---------------------RESPONSIVE 375PX------------------------ */
-@media screen and (min-width:320px) and (max-width:425px){
+@media screen and (min-width:320px) and (max-width:460px){
   body {
     width: 100%;
     background-size: 30rem;
